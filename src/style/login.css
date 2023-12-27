@@ -1,0 +1,98 @@
+.right_side h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+
+@media screen and (max-width: 768px){
+    .right_side h1{
+        font-size: 2rem;
+    }
+    
+}
+
+.detail p{
+    color: #fff;
+    font-weight: 400;
+}
+.detail p span{
+    font-weight: 300;
+    margin-top: 3rem;
+}
+.formStyle{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.warningDetail{
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: gray;
+    /* padding: 5px 0; */
+}
+.rightContainer{
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+@media screen and (max-width: 768px){
+    .warningDetail{
+        font-size: 10px;
+    }
+    .rightContainer{
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 0;
+    }
+    
+}
+
+/* Sign up */
+
+.signForm{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.linkStyle{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 15px;
+}
+.DataGrid-input{
+border-radius: 50%;
+}
+.formStyles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+    .forgotPassword{
+        display: none;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .forgotPassword1{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 568px) {
+    .icons_bagges{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+.btnCapitalize{
+    text-transform: capitalize;
+}
+.icons_bagges{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
