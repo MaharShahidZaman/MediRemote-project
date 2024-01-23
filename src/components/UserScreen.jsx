@@ -222,7 +222,6 @@ export const UserScreen = () => {
                     <IconButton onClick={() => updateModal(params.row)}>
                         <UpdateIcon sx={{ color: 'green' }} />
                     </IconButton>
-
                 </>
             )
         },
@@ -238,7 +237,6 @@ export const UserScreen = () => {
                 const StyledBox = isPending ? StyledBoxYellow : isApproved ? StyledBoxGreen : StyledBoxRed;
                 return (
                     <>
-
                         <StyledBox
                             type="text"
                             value={params.value}

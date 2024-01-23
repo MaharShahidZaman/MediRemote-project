@@ -112,7 +112,7 @@ export default function SideBar() {
                 <List>
                     <ListItem disablePadding component={Link} to='/signUpForm' sx={{ display: 'block' }}>
                         <ListItemButton
-                        onClick={()=> setMenuData('/signUpForm')}
+                            onClick={() => setMenuData('/signUpForm')}
                             sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
@@ -128,14 +128,14 @@ export default function SideBar() {
                         </ListItemButton>
                     </ListItem>
 
-                    <ListItem disablePadding  component={Link} to='/loginform' sx={{ display: 'block' }}>
+                    <ListItem disablePadding component={Link} to='/loginform' sx={{ display: 'block' }}>
                         <ListItemButton
-                        onClick={()=> setMenuData('/loginform')}
+                            onClick={() => setMenuData('/loginform')}
                             sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
                                 px: 2.5,
-                                backgroundColor: menuData === '/loginform' ? 'rgb(71, 71, 71)' : 'inherit'  
+                                backgroundColor: menuData === '/loginform' ? 'rgb(71, 71, 71)' : 'inherit'
                             }}
                         >
                             <ListItemIcon sx={{ justifyContent: 'center', }}>
@@ -146,46 +146,46 @@ export default function SideBar() {
                         </ListItemButton>
                     </ListItem>
 
-                    <ListItem component={Link} to='/patientinfo' disablePadding sx={{ display: 'block'  }}>
+                    <ListItem component={Link} to='/patientinfo' disablePadding sx={{ display: 'block' }}>
                         <ListItemButton
-                            onClick={()=> setMenuData('/patientinfo')}
+                            onClick={() => setMenuData('/patientinfo')}
                             sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
                                 px: 2.5,
                                 backgroundColor: menuData === '/patientinfo' ? 'rgb(71, 71, 71)' : 'inherit'
-                            }} >   
-                                <ListItemIcon sx={{ justifyContent: 'center', }}>
+                            }} >
+                            <ListItemIcon sx={{ justifyContent: 'center', }}>
 
-                                    <GroupWorkIcon sx={{ color: 'white' }} />
+                                <GroupWorkIcon sx={{ color: 'white' }} />
 
-                                </ListItemIcon>
-                            
+                            </ListItemIcon>
+
                         </ListItemButton>
                     </ListItem>
 
-                    <ListItem component={Link} to='/' disablePadding sx={{ display: 'block'  }}>
+                    <ListItem component={Link} to='/' disablePadding sx={{ display: 'block' }}>
                         <ListItemButton
-                            onClick={()=> setMenuData('/')}
+                            onClick={() => setMenuData('/')}
                             sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
                                 px: 2.5,
                                 backgroundColor: menuData === '/' ? 'rgb(71, 71, 71)' : 'inherit'
                             }} >
-                           
-                                <ListItemIcon sx={{ justifyContent: 'center', }}>
 
-                                    <GroupWorkIcon sx={{ color: 'white' }} />
+                            <ListItemIcon sx={{ justifyContent: 'center', }}>
 
-                                </ListItemIcon>
-                            
+                                <GroupWorkIcon sx={{ color: 'white' }} />
+
+                            </ListItemIcon>
+
                         </ListItemButton>
-                    </ListItem> 
+                    </ListItem>
 
                     <ListItem disablePadding component={Link} to='/datagrid' sx={{ display: 'block' }}>
                         <ListItemButton
-                            onClick={()=> setMenuData('/datagrid')}
+                            onClick={() => setMenuData('/datagrid')}
                             sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
@@ -203,7 +203,7 @@ export default function SideBar() {
 
                     <ListItem disablePadding component={Link} to='/user' sx={{ display: 'block' }}>
                         <ListItemButton
-                            onClick={()=> setMenuData('/user')}
+                            onClick={() => setMenuData('/user')}
                             sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
@@ -221,7 +221,7 @@ export default function SideBar() {
 
                     <ListItem disablePadding sx={{ display: 'block' }}>
                         <ListItemButton
-                        // onClick={handlebgcolor}
+                            // onClick={handlebgcolor}
                             sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
@@ -245,7 +245,7 @@ export default function SideBar() {
                                 justifyContent: open ? 'initial' : 'center',
                                 px: 2.5,
                                 // backgroundColor: menuData === true ? 'rgb(71, 71, 71)' : 'inherit'
-                            
+
                             }}
                         >
                             <ListItemIcon sx={{ justifyContent: 'center', }}>
@@ -255,22 +255,19 @@ export default function SideBar() {
                             </ListItemIcon>
                         </ListItemButton>
                     </ListItem>
-                    
-                    <ListItem disablePadding sx={{ display: 'block' }}>
+
+                            <ListItem disablePadding component={Link} to='/patientdata' sx={{ display: 'block' }}>
                         <ListItemButton
-                            // onClick={handlebgcolor}
+                            onClick={() => setMenuData('/patientdata')}
                             sx={{
                                 minHeight: 48,
                                 justifyContent: open ? 'initial' : 'center',
                                 px: 2.5,
-                                // backgroundColor: menuData === true ? 'rgb(71, 71, 71)' : 'inherit'
+                                backgroundColor: menuData === '/patientdata' ? 'rgb(71, 71, 71)' : 'inherit'
                             }}
                         >
-                                <ListItemIcon sx={{ justifyContent: 'center', }}>
-
-                                    <PeopleIcon sx={{ color: 'white' }} />
-
-                                </ListItemIcon>
+                           <PeopleIcon sx={{color:'white'}}/>
+                               
                         </ListItemButton>
                     </ListItem>
 

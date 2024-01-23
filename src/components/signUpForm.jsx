@@ -91,7 +91,6 @@ export const SignUpForm = () => {
     const signUpUser = async () => {
         try {
             await axios.post("http://192.168.0.145/tasks/api/Patient_L/CreateLogin", userData)
-            // alert('Success')
 
         } catch (error) {
             setError(error.message)
@@ -105,7 +104,7 @@ export const SignUpForm = () => {
                 <Typography variant='h4' align='center' mt={'10px'} >{error}</Typography>
             </Box>
 
-            <Paper elevation={12} sx={{ m: '15px auto', width: '88%', ml:'8%'  }}>
+            <Paper elevation={12} sx={{ m: '15px auto', width: '88%', ml: '8%' }}>
                 <Grid container>
                     <Grid item lg={6} md={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', background: '#01619B' }}>
                         <Box sx={{ m: '125px auto', width: '60%' }}>
@@ -200,8 +199,7 @@ export const SignUpForm = () => {
                                         <Button onClick={handleCancelForm} variant="contained" sx={{ padding: '7px 12px', color: 'white', borderRadius: '20px', background: 'black' }}>Cancel</Button>
 
                                         <Button onClick={handleForm}
-                                            disabled={userData.user_Password.length && userData.user_ConfirmPassword.length && emailChecker === true ? false : true} variant="contained" sx={{ padding: '7px 12px', color: 'white', borderRadius: '20px', backgroundColor: 'black' }}
-                                        >Create
+                                            disabled={userData.user_Password.length && userData.user_ConfirmPassword.length && emailChecker === true ? false : true} variant="contained" sx={{ padding: '7px 12px', color: 'white', borderRadius: '20px', backgroundColor: 'black' }}>Create
                                         </Button>
                                     </Box>
                                 </Grid>

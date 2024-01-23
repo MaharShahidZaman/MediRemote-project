@@ -49,7 +49,7 @@ export const Home = () => {
         setFetchData(deleteUser)
     }
 
-    const[updateUserData,setUpdateUserData]=useState({
+    const[updateUserData, setUpdateUserData]=useState({
         user_ID:"",
         first_Name: '',
         last_Name: '',
@@ -179,12 +179,12 @@ export const Home = () => {
                 <DataGrid
                     rows={fetchData}
                     columns={columns}
-
                     initialState={{
                         pagination: {
                             paginationModel: {
                                 pageSize: 5
                             },
+                            pageSize:[5]
                         },
                     }}
                 />

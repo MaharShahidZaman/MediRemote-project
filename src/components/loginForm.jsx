@@ -1,4 +1,4 @@
-import { Box, TextField, styled, Button, InputAdornment, Typography, Link, Grid } from '@mui/material'
+import { Box, Paper, TextField, styled, Button, InputAdornment, Typography, Link, Grid } from '@mui/material'
 import React, { useState } from 'react'
 import '../style/login.css'
 import CopyrightIcon from '@mui/icons-material/Copyright';
@@ -25,7 +25,7 @@ export const Loginform = () => {
       //  console.log(response.data.result) 
       if (response.data.result.role === null) {
         navigate(`/user/${response.data.result.user_ID
-        }`)
+          }`)
       } else {
         navigate('/')
       }
@@ -70,15 +70,16 @@ export const Loginform = () => {
 
   return (
     <>
-      <Grid container sx={{ boxShadow: '2px 2px 5px 0 gray', borderRadius: '1rem', margin: '1rem auto',ml:'8%', width: '88%', minHeight: '300px', }}>
+      <Grid container sx={{ boxShadow: '2px 2px 5px 0 gray', borderRadius: '1rem', margin: '1rem auto', ml: '10%', width: '88%', minHeight: '300px', }}>
         <Grid container item justifyContent={'center'} flexDirection={'column'} lg={5} md={12}>
           <ContainerForm>
             <Box component='img' src={logoImg} sx={{ width: '150px', height: '40px' }} />
             <form className='formStyle'>
               <TextField
                 error={emailChecker === false ? true : false}
-                helperText={emailChecker === false ? 'You must enter email' : ''} value={email} onChange={targetEmail} type='email' label='Email' />
-              <TextField error={password.length >= 4 ? false : true} helperText={passwordValidation == true ? '' : 'Please Enter your password'} value={password} onChange={targetPassword} type={show ? 'password' : 'text'} label='Password'
+                helperText={emailChecker === false ? 'You must enter email' : emailChecker === false ?'Enter Valid Email' : ''} value={email} onChange={targetEmail} type='email' label='Email' />
+
+              <TextField error={password.length >= 4 ? false : true} helperText={password.length === 0 ? 'Enter Password' : password.length <=4 ? 'Must be 5 Charecture' : ''} value={password} onChange={targetPassword} type={show ? 'password' : 'text'} label='Password'
                 InputProps={{
                   endAdornment: (
                     <InputAdornment position='start'>
@@ -108,7 +109,7 @@ export const Loginform = () => {
         </Grid>
 
         <Grid container item lg={7} md={12} sx={{
-          justifyContent: 'center', alignItems: 'center', background: '#01619B'
+          justifyContent: 'center', alignItems: 'center', background: '#01619B',
         }} className='rightContainer'>
           <Grid item sx={{ maxWidth: '40%', margin: '4rem' }} className='right_side'>
             <h1>Welcome to the <span>MEDIREMOTE</span></h1>

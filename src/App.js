@@ -8,11 +8,13 @@ import { DataGridTable } from './components/DataGrid';
 import  SideBar  from './components/SideBar';
 import { PatientInfo } from './components/PatientInfo';
 import { Charts } from './components/Chart';
+import { PatientData } from './components/PatientData';
+import { Practice } from './Practice';
 
 function App() {
   return (
     <div>
-      {/* <Charts /> */}
+      {/* <Practice /> */}
       <BrowserRouter>
       <SideBar />
       <Routes>
@@ -22,6 +24,7 @@ function App() {
         <Route path='/user/:id' element={<UserScreen />} /> 
         <Route path='/datagrid' element={<DataGridTable />} />
         <Route path='/patientinfo' element={<PatientInfo />} />
+        <Route path='/patientdata' element={<PatientData />} />
       </Routes>
       </BrowserRouter>
     </div>

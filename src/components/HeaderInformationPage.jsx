@@ -12,7 +12,7 @@ import { Avatar, Drawer } from '@mui/material';
 
 export default function HeaderInformationPage() {
 
-    const [mobileOpen, setMobileOpen] = React.useState(false);
+    const [mobileOpen, setMobileOpen] = useState(false);
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);

@@ -37,3 +37,22 @@
     transform: rotate(360deg);
   }
 }
+
+/* .scrollStyle {
+  width: 300px;
+  height: 200px;
+  overflow: auto;
+} */
+
+/* For WebKit browsers (Chrome, Safari) */
+.scrollStyle::-webkit-scrollbar {
+  width: 4px; /* Set the width of the scrollbar */
+}
+
+.scrollStyle::-webkit-scrollbar-thumb {
+  background-color: #7f7f7f; /* Set the color of the scrollbar thumb */
+}
+
+.scrollStyle::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Set the color of the scrollbar track */
+}
